@@ -7,11 +7,89 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d786b66cd.js" crossorigin="anonymous"></script>
     <title>Web Contador</title>
 </head>
 
 <body>
     <div class="contenedor">
+        <h1 class="titulo">Gonzalo Di Gesu - Contador Público</h1>
+        <div class="modalbio">
+            <div class="modal-contenido">
+                <span class="closebio">&times;</span>
+                <h3>BIO</h3>
+                <hr size="10" />
+                <p class="textobio">Mi nombre es Gonzalo Di Gesu, contador público graduado en la Facultad de Ciencias
+                    Económicas de la
+                    Universidad de Buenos Aires en el año 2012. Mi matricula es CP Tomo 407 Folio 222. </p>
+                <p class="textobio">
+                    Desde el año 2007 que trabajo en una PyME del rubro Salud, donde comencé como empleado
+                    administrativo contable, llegando hoy a ser Jefe de Administración y Finanzas. En el interín realicé
+                    múltiples tareas, desde las de carácter más operativo, como el manejo de la caja chica, hasta las
+                    más análiticas, las cuales realizo hoy en día; análisis de flujos de liquidez, forecast, búsqueda de
+                    oportunidades de inversión, entre otras. Trabajar en una empresa de este tamaño me permitió adquirir
+                    vastos conocimientos de cada área y no limitarme a una específica.</p>
+                <p class="textobio">
+                    A su vez, desde el año 2017 me desempeño como profesional independiente. Comenzando con la atención
+                    hacia personas físicas monotributistas, fui creciendo en mi rol como contador y adquiriendo
+                    experiencias que el empleo en relación de dependencia no me daba.</p>
+                <p class="textobio">En lo personal, creo que el rol del contador en la sociedad es el poder ofrecer
+                    herramientas a las
+                    personas para poder recibir un trato impositivo justo y poder desenvolverse de forma socialmente
+                    responsable en sus actividades profesionales.</p>
+
+            </div>
+        </div>
+        <div class="modalservicios">
+            <div class="modal-contenido">
+                <span class="closeservicios">&times;</span>
+                <h3>SERVICIOS</h3>
+                <hr size="10" />
+                <ul class="servicios">
+                    <li>Monotributo</li>
+                    <li>Ingresos Brutos: Contribuyente Local y Convenio Multilateral</li>
+                    <li>DDJJ Impuesto a las Ganancias</li>
+                    <li>DDJJ Bienes Personales</li>
+                    <li>Seguimiento de facturación para monotributistas</li>
+                    <li>Régimen General: IVA, Ganancias, Autónomos</li>
+                    <li>Regimenes de Retención y de Información</li>
+                    <li>Baja de Impuestos</li>
+                    <li>Novedades Impositivas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modalrs">
+            <div class="modal-contenido">
+                <span class="closers">&times;</span>
+                <h3>PODÉS ENCONTRARME EN:</h3>
+                <hr size="100" />
+                <ul class="redes">
+                    <li><a href="https://wa.me/5491140457664" target="_blank">
+                            <i class="fab fa-whatsapp-square"></i>
+                            Whatsapp
+                        </a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/gonzalo-di-gesu-a6b06880/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            Linkedin
+                        </a>
+                    </li>
+                    <li><a href="mailto:godigesu@gmail.com">
+                            <i class="fas fa-mail-bulk"></i>
+                            Mail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/gonzalo.digesu.1/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                            Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <ul class="opciones">
             <li class="item1"></li>
             <li class="item2">Bio.</li>
@@ -36,20 +114,18 @@
                 <input type="email" class="form-control email" id="correo" placeholder="nombre@...com">
             </div>
             <div class="form-group">
-                <label for="consulta">Consulta</label>
-                <textarea class="form-control texto" id="consulta" rows="3" maxlength="360"
+                <label for="comentario">Comentario</label>
+                <textarea class="form-control texto" id="comentario" rows="3" maxlength="360"
                     placeholder="Máximo 360 caracteres."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-2" disabled>Enviar</button>
-            <button type="submit" class="btn btn-danger mb-2">Cancelar</button>
+            <button type="submit" class="btn btn-primary mb-2 btn-xs-block" disabled><span
+                    class="botones">Enviar</span></button>
+            <button type="submit" class="btn btn-danger mb-2 btn-xs-block"><span
+                    class="botones">Cancelar</span></button>
+            <div class="mensajeError"></div>
         </form>
 
     </div>
-
-
-
-
-
     <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
