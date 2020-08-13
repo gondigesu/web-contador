@@ -7,7 +7,7 @@
 
 .contenedor{
     width:100vw;
-    height:160vh;
+    height:100vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.73), rgba(0,0,0,0.73)), url(../imagenes/background.jpg);
     background-size:cover;
     display:flex;
@@ -56,6 +56,8 @@ h3{
 
 .item5, .item6, .item7{
     border-right: 5px solid white;
+    text-decoration: none;
+    color:white;
 }
 
 .opciones li:hover{
@@ -63,18 +65,10 @@ h3{
     color:black;
 }
 
-form{
-    background:white;
-    padding:25px;
-    width:35%;
-    margin-top:30px;
-    margin-left:10px;
-    margin-bottom:20px;
-    display:none;
-    border-radius:10px;
-    box-shadow: 2px 2px 2px grey;
-    font-family: 'Roboto', sans-serif;
+.item7 a:hover{
+    color:black;
 }
+
 
 .modalservicios, .modalrs, .modalbio{
     display: none;
@@ -97,6 +91,8 @@ form{
     width: 50%; 
     border-radius:30px;
   }
+
+  
 
   .closebio, .closers, .closeservicios {
     color: #aaa;
@@ -151,6 +147,17 @@ form{
     text-align: justify;
     font-size:15px;
 }
+
+.item7 a{
+    text-decoration: none;
+    color: white
+}
+
+.item7 a:hover{
+    color:black;
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width: 768px) {
 
